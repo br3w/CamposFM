@@ -1,0 +1,396 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('../fonts/oswald-bold-webfont.eot');
+    src: url('../fonts/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-bold-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-bold-webfont.woff') format('woff'),
+         url('../fonts/oswald-bold-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-bold-webfont.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('../fonts/ubuntu-medium-webfont.eot');
+    src: url('../fonts/ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-medium-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-medium-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-medium-webfont.svg#ubuntumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'istok_webregular';
+    src: url('../fonts/istokweb-regular-webfont.eot');
+    src: url('../fonts/istokweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/istokweb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/istokweb-regular-webfont.woff') format('woff'),
+         url('../fonts/istokweb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/istokweb-regular-webfont.svg#istok_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family:'museo_sans100';
+    src: url('../fonts/museosans-100-webfont.eot');
+    src: url('../fonts/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans-100-webfont.woff') format('woff'),
+         url('../fonts/museosans-100-webfont.ttf') format('truetype'),
+         url('../fonts/museosans-100-webfont.svg#museo_sans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    background: -webkit-linear-gradient( #000 , #111); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #000 , #111); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #000 , #111); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000 , #111); /* Standard syntax */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Painel - Estrutura
+   ========================================================================== */
+
+    #painel{
+        position: absolute;
+        top:20px;
+        bottom:20px;
+        left:20px;
+        right:20px;
+        overflow: hidden;
+    }
+    
+    /*Blocos Internos*/
+    #box-top-left{
+        border-top-left-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+    }
+
+    #box-top-center{
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+    #box-top-right{
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+    #box-nav-left{}
+    #box-nav-center{}
+    #box-nav-right{}
+
+
+    /*Colunas*/
+
+
+    .center{
+        margin:auto;
+        background-color: #900;
+        max-width: 1200px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+    #col-left{
+        width:180px;
+        height: 3000px;
+        display: block;
+        float: left;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+        -moz-border-bottom-left-radius: 5px;
+    }
+
+    #col-rigth{
+        height: 3000px;
+        float: left;
+        display: block;
+        padding-left: 190px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+    #col-rigth div  p{
+        padding: 15px;
+    }
+
+body{
+    padding: 20px;
+}
+
+.row{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+.row .center .box-left{
+    width: 15%;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.row .center .box-center{
+    width: 70%;
+    float: left;
+    display: block;
+}
+
+.row .center .box-right{
+    width: 15%;
+    float: left;
+    display: block;
+}
+
+.h-box01{ height: 70px; }
+.h-box02{ height: 60px; }
+.h-box03{ height: 800px;}
+.h-box04{ height: 40px;}
+.m-row{ margin-top: 30px;}
+
+.bg-color01{background-color: #01CAFF}
+.bg-color02{background-color: #00BDF1}
+.bg-color03{background-color: #01B3E3}
+.bg-color04{background-color: #FFF}
+.bg-color05{background-color: #ECF0F4}
+.bg-color06{background-color: #6A588A}
+.bg-color07{background-color: #746093}
+.bg-color08{background-color: #7F6C99}
+
+.row-01, .row-02, .row-03{
+    width: 100%;
+}
+
+.row-01{
+    height: 65px;
+}
+
+.row-02{
+    height: 55px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

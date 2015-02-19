@@ -1,0 +1,13 @@
+## Tipo de codificação padrão para caracteres
+
+AddDefaultCharset UTF-8
+
+## URLS Amigaveis
+
+RewriteEngine on
+
+## Permissão para utilizar estas pastas sem reescrita
+
+RewriteCond $1 !^(index\.php|public_html|uploads|assets|asus|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
+
